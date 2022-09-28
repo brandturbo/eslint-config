@@ -1,0 +1,58 @@
+{
+    "name": "@fanclub/eslint-plugin",
+    "description": "Some custom rules for @fanclub projects.",
+    "keywords": [
+        "eslint",
+        "eslintplugin",
+        "eslint-plugin"
+    ],
+    "author": "Levin Keller",
+    "main": "dist/index.js",
+    "exports": "./dist/index.js",
+    "scripts": {
+        "lint": "eslint .",
+        "test": "jest"
+    },
+    "dependencies": {
+        "eslint-utils": "^3.0.0",
+        "requireindex": "^1.2.0",
+        "tsutils": "^3.21.0"
+    },
+    "devDependencies": {
+        "@babel/cli": "^7.19.3",
+        "@babel/core": "^7.19.3",
+        "@babel/preset-env": "^7.19.3",
+        "@babel/preset-typescript": "^7.18.6",
+        "@babel/register": "^7.18.9",
+        "@types/eslint": "^8.4.6",
+        "@types/jest": "^29.0.3",
+        "@types/node": "^18.7.23",
+        "@types/requireindex": "^1.2.0",
+        "@typescript-eslint/eslint-plugin": "^5.38.1",
+        "@typescript-eslint/parser": "^5.38.1",
+        "@typescript-eslint/types": "^5.38.1",
+        "@typescript-eslint/utils": "^5.38.1",
+        "eslint": "^8.19.0",
+        "eslint-plugin-eslint-plugin": "^5.0.0",
+        "eslint-plugin-node": "^11.1.0",
+        "jest": "^28",
+        "prettier": "^2.7.1",
+        "typescript": "^4.8.3"
+    },
+    "engines": {
+        "node": "^14.17.0 || ^16.0.0 || >= 18.0.0"
+    },
+    "peerDependencies": {
+        "eslint": ">=7"
+    },
+    "license": "ISC",
+    "packageManager": "yarn@3.2.3",
+    "resolutions": {
+        "eslint": "~8.22",
+        "eslint:comment": "https://youtrack.jetbrains.com/issue/WEB-57089/ESLint823-TypeError-thislibOptionsparse-is-not-a-function",
+        "typescript": "4.8.3",
+        "typescript:comment": "4.8.4 seems to not be compatible with yarn berry and pnp",
+        "jest": "~28",
+        "jest:comment": "29 seems to not be compatible with yarn berry and pnp"
+    }
+}
