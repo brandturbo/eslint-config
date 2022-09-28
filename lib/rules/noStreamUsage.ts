@@ -9,14 +9,14 @@ export default createRule({
     name: 'no-stream-usage',
     meta: {
         docs: {
-            description: 'disallow the a specific method of a prototype.',
+            description: 'disallow consumption of streams via `on`.',
             recommended: false,
         },
         schema: [],
         fixable: undefined,
         messages: {
             forbidden:
-                'Cannot call array member methods. Use ramda functions instead. e.g. `R.map` instead of [].map',
+                'Do not consume stream with `Stream.on`. Consume it as an async iterator instead',
         },
         type: 'problem',
     },
