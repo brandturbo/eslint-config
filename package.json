@@ -7,11 +7,12 @@
         "eslint-plugin"
     ],
     "author": "brandTURBO GmbH",
-    "main": "dist/index.js",
+    "main": "./dist/index.js",
     "exports": "./dist/index.js",
     "scripts": {
         "lint": "eslint .",
-        "test": "jest"
+        "test": "jest",
+        "build": "tsc -p tsconfig.build.json"
     },
     "dependencies": {
         "@typescript-eslint/utils": "^5.38.1",

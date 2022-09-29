@@ -1,10 +1,10 @@
 import { RuleTester } from 'eslint'
-import rule from './noArrayMethods'
+import { noArrayMethods } from './noArrayMethods'
 
 new RuleTester({ parser: require.resolve('@typescript-eslint/parser') }).run(
     'no-array-methods',
     //@ts-expect-error types somehow wrong
-    rule,
+    noArrayMethods,
     {
         valid: [
             {

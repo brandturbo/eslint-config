@@ -4,7 +4,7 @@ const createRule = ESLintUtils.RuleCreator(
     (name) => `https://example.com/rule/${name}`
 )
 
-export default createRule({
+export const noArrayMethods = createRule({
     defaultOptions: [],
     name: 'no-array-methods',
     meta: {
