@@ -14,7 +14,6 @@ const rules = {
 }
 const configs = {
     recommended: {
-        root: true,
         parser: '@typescript-eslint/parser',
         plugins: [
             '@typescript-eslint',
@@ -43,7 +42,11 @@ const configs = {
             '@typescript-eslint/ban-ts-comment': 'error',
             'no-console': 'error',
             '@typescript-eslint/no-unused-vars': 'error',
-            '@brandturbo/no-array-methods': 'error'
+            '@brandturbo/no-array-methods': 'error',
+
+            //overwrites:
+            "@typescript-eslint/prefer-readonly": "off",
+            "@typescript-eslint/prefer-readonly-parameter-types": "off",
         },
     },
 }
