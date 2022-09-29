@@ -1,6 +1,6 @@
 {
-    "name": "@fanclub/eslint-plugin",
-    "description": "Some custom rules for @fanclub projects.",
+    "name": "@brandturbo/eslint-plugin",
+    "description": "Some custom rules for @brandturbo projects.",
     "keywords": [
         "eslint",
         "eslintplugin",
@@ -12,7 +12,9 @@
     "scripts": {
         "lint": "eslint .",
         "test": "jest",
-        "build": "tsc -p tsconfig.build.json"
+        "build": "tsc -p tsconfig.build.json",
+        "prepack": "yarn build",
+        "postpack": "rm -rf dist"
     },
     "dependencies": {
         "@typescript-eslint/utils": "^5.38.1",
@@ -47,6 +49,7 @@
     "engines": {
         "node": "^14.17.0 || ^16.0.0 || >= 18.0.0"
     },
+    "repository": "github:brandturbo/eslint-config",
     "peerDependencies": {
         "@typescript-eslint/eslint-plugin": "^5.30.7",
         "@typescript-eslint/parser": "^5.30.7",
@@ -66,5 +69,6 @@
         "typescript:comment": "4.8.4 seems to not be compatible with yarn berry and pnp",
         "jest": "~28",
         "jest:comment": "29 seems to not be compatible with yarn berry and pnp"
-    }
+    },
+    "version": "1.0.4"
 }
