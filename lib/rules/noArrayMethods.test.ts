@@ -10,6 +10,9 @@ new RuleTester({ parser: require.resolve('@typescript-eslint/parser') }).run(
             {
                 code: 'R.map(value => value + 1, [1,2])',
             },
+            {
+                code: '[1,2].length',
+            },
         ],
 
         invalid: [
