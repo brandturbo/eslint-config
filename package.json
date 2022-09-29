@@ -6,7 +6,7 @@
         "eslintplugin",
         "eslint-plugin"
     ],
-    "author": "Levin Keller",
+    "author": "brandTURBO GmbH",
     "main": "dist/index.js",
     "exports": "./dist/index.js",
     "scripts": {
@@ -14,6 +14,7 @@
         "test": "jest"
     },
     "dependencies": {
+        "@typescript-eslint/utils": "^5.38.1",
         "eslint-utils": "^3.0.0",
         "requireindex": "^1.2.0",
         "tsutils": "^3.21.0"
@@ -31,19 +32,29 @@
         "@typescript-eslint/eslint-plugin": "^5.38.1",
         "@typescript-eslint/parser": "^5.38.1",
         "@typescript-eslint/types": "^5.38.1",
-        "@typescript-eslint/utils": "^5.38.1",
         "eslint": "^8.19.0",
+        "eslint-config-prettier": "^8.5.0",
         "eslint-plugin-eslint-plugin": "^5.0.0",
+        "eslint-plugin-functional": "^4",
         "eslint-plugin-node": "^11.1.0",
+        "eslint-plugin-simple-import-sort": "^7.0.0",
+        "eslint-plugin-unicorn": "^43",
         "jest": "^28",
         "prettier": "^2.7.1",
-        "typescript": "^4.8.3"
+        "typescript": "^4.7.4"
     },
     "engines": {
         "node": "^14.17.0 || ^16.0.0 || >= 18.0.0"
     },
     "peerDependencies": {
-        "eslint": ">=7"
+        "@typescript-eslint/eslint-plugin": "^5.30.7",
+        "@typescript-eslint/parser": "^5.30.7",
+        "eslint": "7 - 8",
+        "eslint-config-prettier": "^8.5.0",
+        "eslint-plugin-functional": "^4",
+        "eslint-plugin-simple-import-sort": "^7.0.0",
+        "eslint-plugin-unicorn": "^43",
+        "typescript": "^4.7.4"
     },
     "license": "ISC",
     "packageManager": "yarn@3.2.3",
