@@ -1,46 +1,42 @@
-# eslint-plugin-no-restricted-methods
+# brandTURBOs eslint-plugin
 
-Allows to restrict usage of member methods for classes.
+Brings some rules for you.
 
 ## Installation
 
 You'll first need to install [ESLint](https://eslint.org/):
 
 ```sh
-npm i eslint --save-dev
+yarn add -D eslint
 ```
 
-Next, install `eslint-plugin-no-restricted-methods`:
+Next, install `@brandturbo/eslint-plugin`:
 
 ```sh
-npm install eslint-plugin-no-restricted-methods --save-dev
+yarn add -D @brandturbo/eslint-plugin
 ```
 
 ## Usage
 
-Add `no-restricted-methods` to the plugins section of your `.eslintrc` configuration file. You can omit the `eslint-plugin-` prefix:
+Add `@brandturbo/eslint-plugin` to the plugins section of your `.eslintrc` configuration file and enable the recommend rules. You can omit the `eslint-plugin-` prefix:
 
 ```json
 {
-    "plugins": [
-        "no-restricted-methods"
-    ]
+    "plugins": ["@brandturbo"],
+    "extends": ["plugin:@brandturbo/recommended"]
 }
 ```
 
-
-Then configure the rules you want to use under the rules section.
+You can also configure only specific rules
 
 ```json
 {
     "rules": {
-        "no-restricted-methods/rule-name": 2
+        "@brandturbo/no-array-methods": 2
     }
 }
 ```
 
 ## Supported Rules
 
-* Fill in provided rules here
-
-
+-   Fill in provided rules here [TODO]
