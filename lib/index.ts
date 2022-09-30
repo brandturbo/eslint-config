@@ -15,7 +15,7 @@ const rules = {
 const configs = {
     recommended: {
         parser: '@typescript-eslint/parser',
-        plugins: ['simple-import-sort', '@brandturbo', 'functional'],
+        plugins: ['simple-import-sort', '@brandturbo', 'functional', 'unicorn'],
         extends: [
             'eslint:recommended',
             'plugin:@typescript-eslint/recommended',
