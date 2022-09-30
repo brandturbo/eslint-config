@@ -25,17 +25,20 @@ const configs = {
         extends: [
             'eslint:recommended',
             'plugin:@typescript-eslint/recommended',
-            "plugin:@typescript-eslint/recommended-requiring-type-checking",
+            'plugin:@typescript-eslint/recommended-requiring-type-checking',
             'plugin:functional/external-recommended',
             'plugin:functional/no-object-orientation',
             'plugin:unicorn/recommended',
             'prettier',
+            'prettier/unicorn',
+            'prettier/@typescript-eslint',
+            'prettier/babel',
+            'prettier/unicorn',
         ],
         env: {
             node: true,
         },
         rules: {
-            "unicorn/filename-case": ["error", { "case": "camelCase" }],
             'simple-import-sort/imports': 'error',
             'simple-import-sort/exports': 'error',
             'arrow-body-style': ['error', 'as-needed'],
@@ -45,8 +48,13 @@ const configs = {
             '@brandturbo/no-array-methods': 'error',
 
             //overwrites:
-            "@typescript-eslint/prefer-readonly": "off",
-            "@typescript-eslint/prefer-readonly-parameter-types": "off",
+            '@typescript-eslint/prefer-readonly': 'off',
+            '@typescript-eslint/prefer-readonly-parameter-types': 'off',
+
+            // https://github.com/sindresorhus/eslint-plugin-unicorn/issues/896
+
+            'unicorn/filename-case': 'off',
+            'unicorn/prefer-query-selector': 'off',
         },
     },
 }
