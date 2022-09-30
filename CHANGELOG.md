@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.2.0](https://github.com/brandturbo/eslint-plugin/compare/v1.1.0...v1.2.0) (2022-09-30)
+
+
+### Features
+
+* disable nasty rules ([8a9721f](https://github.com/brandturbo/eslint-plugin/commit/8a9721ffecf88595aad95a80f9a288f5dcafea96))
+
 ## [1.1.0](https://github.com/brandturbo/eslint-plugin/compare/v1.0.5...v1.1.0) (2022-09-29)
 
 
