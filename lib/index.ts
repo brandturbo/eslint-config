@@ -15,13 +15,7 @@ const rules = {
 const configs = {
     recommended: {
         parser: '@typescript-eslint/parser',
-        plugins: [
-            '@typescript-eslint',
-            'simple-import-sort',
-            'functional',
-            'unicorn',
-            '@brandturbo',
-        ],
+        plugins: ['simple-import-sort', '@brandturbo'],
         extends: [
             'eslint:recommended',
             'plugin:@typescript-eslint/recommended',
@@ -29,11 +23,7 @@ const configs = {
             'plugin:functional/external-recommended',
             'plugin:functional/no-object-orientation',
             'plugin:unicorn/recommended',
-            'prettier',
-            'prettier/unicorn',
-            'prettier/@typescript-eslint',
-            'prettier/babel',
-            'prettier/unicorn',
+            'plugin:prettier/recommended',
         ],
         env: {
             node: true,
