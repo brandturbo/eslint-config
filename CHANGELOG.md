@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.2.3](https://github.com/brandturbo/eslint-plugin/compare/v1.2.2...v1.2.3) (2022-09-30)
+
+
+### Bug Fixes
+
+* fix deps ([bb73a8a](https://github.com/brandturbo/eslint-plugin/commit/bb73a8a56ae3ada6fc6d93f45e761ac51f883bf6))
+
 ## [1.2.2](https://github.com/brandturbo/eslint-plugin/compare/v1.2.1...v1.2.2) (2022-09-30)
 
 
