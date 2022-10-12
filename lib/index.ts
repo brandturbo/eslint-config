@@ -41,10 +41,17 @@ const configs = {
             '@typescript-eslint/prefer-readonly': 'off',
             '@typescript-eslint/prefer-readonly-parameter-types': 'off',
 
+            // Often our projects, especially in React, have interfaces that are a mix of data and methods
+            'functional/no-mixed-type': 'off',
+
             // https://github.com/sindresorhus/eslint-plugin-unicorn/issues/896
 
             'unicorn/filename-case': 'off',
             'unicorn/prefer-query-selector': 'off',
+
+            // These rules conflict with @typescript/eslint
+            'unicorn/no-useless-undefined': 'off',
+            'unicorn/prefer-spread': 'off',
         },
     },
 }
